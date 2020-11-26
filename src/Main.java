@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class Main {
 
@@ -8,12 +6,13 @@ public class Main {
 
         ArrayList<Funcionario> funcionarios = new ArrayList<>();
 
-        funcionarios.add(new Funcionario("bernardo"));
-        funcionarios.add(new Funcionario("joao"));
+        funcionarios.add(new FuncionarioGestor("bernardo"));
+        funcionarios.add(new FuncionarioTarefeiro("joao"));
 
 
-        funcionarios.get(0).adicionaTarefa(new Tarefa("entrar cedo",8, new Date(25-11-2020)));
 
+        Cliente a = new ClienteParticular("a",1,2);
+System.out.println("a");
     }
 
 }

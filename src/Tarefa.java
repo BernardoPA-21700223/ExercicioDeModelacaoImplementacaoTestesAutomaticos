@@ -2,12 +2,14 @@ import java.util.Date;
 
 public class Tarefa {
 
-    String dicriçao;
+    String dicricao;
+    int valorhora;
     int horas;
     Date data;
 
-    public Tarefa(String dicriçao, int horas, Date data) {
-        this.dicriçao = dicriçao;
+    public Tarefa(String dicricao, int valorHora, int horas, Date data) {
+        this.dicricao = dicricao;
+        this.valorhora= valorHora;
         this.horas = horas;
         this.data = data;
     }
